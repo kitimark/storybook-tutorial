@@ -1,8 +1,7 @@
 import React from 'react'
 
 import TaskList from './TaskList'
-import { taskData, actionData } from './Task.stories'
-import { decorate } from '@storybook/addon-actions'
+import { taskData, actionsData } from './Task.stories'
 
 export default {
   component: TaskList,
@@ -25,10 +24,10 @@ export const withPinnedTaskData = [
   {id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED'},
 ]
 
-export const Default = () => <TaskList tasks={defaultTasksData} {...actionData} />
+export const Default = () => <TaskList tasks={defaultTasksData} {...actionsData} />
 
-export const WithPinnedTasks = () => <TaskList tasks={withPinnedTaskData} {...actionData} />
+export const WithPinnedTasks = () => <TaskList tasks={withPinnedTaskData} {...actionsData} />
 
-export const Loading = () => <TaskList loading tasks={[]} {...actionData} />
+export const Loading = () => <TaskList loading tasks={[]} {...actionsData} />
 
-export const Empty = () => <TaskList tasks={[]} {...actionData} />
+export const Empty = () => <TaskList tasks={[]} {...actionsData} />

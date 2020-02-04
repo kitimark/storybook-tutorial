@@ -18,7 +18,7 @@ export const taskData = {
 
 export const actionsData = {
   onPinTask: action('onpPinTask'),
-  onArchivTask: action('onArchiveTask'),
+  onArchiveTask: action('onArchiveTask'),
 }
 
 export const Default = () => {

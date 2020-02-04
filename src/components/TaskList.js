@@ -18,7 +18,7 @@ function TaskList({loading, tasks, onPinTask, onArchiveTask}) {
     </div>
   )
   if (loading) {
-    return <div className="list-item">
+    return <div className="list-items">
       {LoadingRow}
       {LoadingRow}
       {LoadingRow}
@@ -52,11 +52,11 @@ function TaskList({loading, tasks, onPinTask, onArchiveTask}) {
   )
 }
 
-TaskList.protoTypes = {
+TaskList.propTypes = {
   loading: PropTypes.bool,
   tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
   onPinTask: PropTypes.func.isRequired,
-  onArchivTask: PropTypes.func.isRequired,
+  onArchiveTask: PropTypes.func.isRequired,
 }
 
 TaskList.defaultProps = {
