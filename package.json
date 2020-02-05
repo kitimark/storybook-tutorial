@@ -20,7 +20,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "CHROMATIC_APP_CODE=zupxgqj8ay chromatic"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,12 +39,16 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.8.3",
     "@storybook/addon-actions": "^5.3.10",
     "@storybook/addon-links": "^5.3.10",
     "@storybook/addon-storyshots": "^5.3.10",
     "@storybook/addons": "^5.3.10",
+    "@storybook/api": "^5.3.12",
+    "@storybook/components": "^5.3.12",
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.10",
+    "@storybook/theming": "^5.3.12",
     "react-test-renderer": "^16.12.0"
   }
 }
